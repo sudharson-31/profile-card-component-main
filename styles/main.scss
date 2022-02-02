@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+$font: 'Kumbh Sans', sans-serif;
+$dark-cyan: hsl(185, 75%, 39%);
+$vd-desat-blue:hsl(229, 23%, 23%);
+$grayish-blue: hsl(227, 10%, 46%);
+$dark-gray: hsl(0, 0%, 59%);
+$fsz: 18px;
+@mixin extra-dets{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+        font-weight: 700;
+        color: $vd-desat-blue;
+        padding-bottom: 3px;
+        font-size: 1.5em;
+    }
+    font-size: 0.8em;
+    color: $grayish-blue;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    display: flex;
+    min-width: 375px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.main-box{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 350px;
+    border-radius: 10px;
+    .top{   
+        display: inline-flex;
+        flex-direction: column;
+        width: inherit;
+        align-items: center;
+        height: fit-content;
+        .banner{
+            display: inline-flex;
+            position: relative;
+            width: inherit;
+            z-index: 0;
+            border-radius: 10px 10px 0px 0px;
+        }
+        .profile-picture{
+            //position: relative;
+            height: max-content;
+            display: inline-flex;
+            //width: 30%;
+            margin-top: -15%;
+            border-radius: 50em;
+            border-width: 10px;
+            border-color: white;
+            border-style: solid;
+           z-index: 1;
+        }
+    }
+    .details{
+        display: inline-flex;
+        flex-direction: column;
+        font-family: $font;
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: $grayish-blue;
+        align-items: center;
+        width: inherit;
+        padding-bottom: 20px;
+        
+        .line{
+            padding-top: 5%;
+            display: inline-flex;
+            flex-direction: row;
+            font-size: 1.5rem ;
+            justify-content: center;
+          
+            width: inherit;
+            padding-bottom: 2%;
+            p{
+                color: $vd-desat-blue;
+                font-weight: 700;
+                padding-right: 3%;
+            }
+        }
+    }
+    .extra-details{
+        border-top: solid 0.8px $dark-gray; 
+        padding-top: 20px;
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-around;
+        justify-items: flex-end;
+        font-family: $font;
+        .followers{
+          @include extra-dets()
+        }
+        .likes{
+            @include extra-dets()
+        }
+        .photos{
+            @include extra-dets()
+        }
+    }
+}

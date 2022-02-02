@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  display: flex;
+  min-width: 375px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.main-box {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  width: 350px;
+  border-radius: 10px;
+}
+.main-box .top {
+  display: inline-flex;
+  flex-direction: column;
+  width: inherit;
+  align-items: center;
+  height: fit-content;
+}
+.main-box .top .banner {
+  display: inline-flex;
+  position: relative;
+  width: inherit;
+  z-index: 0;
+  border-radius: 10px 10px 0px 0px;
+}
+.main-box .top .profile-picture {
+  height: max-content;
+  display: inline-flex;
+  margin-top: -15%;
+  border-radius: 50em;
+  border-width: 10px;
+  border-color: white;
+  border-style: solid;
+  z-index: 1;
+}
+.main-box .details {
+  display: inline-flex;
+  flex-direction: column;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #6a6f81;
+  align-items: center;
+  width: inherit;
+  padding-bottom: 20px;
+}
+.main-box .details .line {
+  padding-top: 5%;
+  display: inline-flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  justify-content: center;
+  width: inherit;
+  padding-bottom: 2%;
+}
+.main-box .details .line p {
+  color: #2d3248;
+  font-weight: 700;
+  padding-right: 3%;
+}
+.main-box .extra-details {
+  border-top: solid 0.8px #969696;
+  padding-top: 20px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-items: flex-end;
+  font-family: "Kumbh Sans", sans-serif;
+}
+.main-box .extra-details .followers {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8em;
+  color: #6a6f81;
+}
+.main-box .extra-details .followers p {
+  font-weight: 700;
+  color: #2d3248;
+  padding-bottom: 3px;
+  font-size: 1.5em;
+}
+.main-box .extra-details .likes {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8em;
+  color: #6a6f81;
+}
+.main-box .extra-details .likes p {
+  font-weight: 700;
+  color: #2d3248;
+  padding-bottom: 3px;
+  font-size: 1.5em;
+}
+.main-box .extra-details .photos {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8em;
+  color: #6a6f81;
+}
+.main-box .extra-details .photos p {
+  font-weight: 700;
+  color: #2d3248;
+  padding-bottom: 3px;
+  font-size: 1.5em;
+}
+
+/*# sourceMappingURL=main.css.map */
